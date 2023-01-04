@@ -35,6 +35,7 @@ What is a real-time operating system (RTOS)? A real-time operating system (RTOS)
 Definition: 
 ***********
 DIFFERENCE = PROCESSOR VS CORE:
+
 6. Processor is nothing but a core + lots of supported peripherals. core is basically a ALU where data computation takes place and result will be generated.  
    Processor is also called as CPU and core is called as CPU core. A Processor may contain many cores. (BINGO!!!)
      
