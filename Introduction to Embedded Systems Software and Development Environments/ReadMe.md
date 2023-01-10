@@ -1,7 +1,7 @@
 Course: Introduction to Embedded Systems Software and Development Environments
 *******************************************************************************
 
-Video 0: 
+Video 0: Introduction to the course
 
 -> Nearly all embedded systems contain a processing core like a micro controlle and these require the design of low level software in order to function.
    However, software design is just one piece of the embedded system that a software engineer must be familiar with. 
@@ -20,3 +20,17 @@ Video 0:
 
 -> Goal of the course: Develop both portable and architecture specific software for embedded systems in C-programming.  
   
+  
+************************************************************************************************************************************
+Video 1:  Introduction to the Module  
+
+-> In this module, we'll explore the components of the embedded systems design platform. Designing embedded systems takes a lot expertise in both hardware and software disciplines.
+
+-> Embedded software engineers need to have expertise and understanding hardware concepts, knowing how to correctly write and design low-level software, and knowing how to use tools to interact and     
+   evaluate their platform
+
+-> Embedded software engineers start their code development process on a host machine, working with tools like compilers, debuggers, and version control.
+   A significant amount of time is spent away from hardware, as you develop code and prepare it to test on your target embedded system. 
+
+-> For your software development environment, you will interact directly with tools like GCC, GNU Make, Linux Command Line, Version Control, and an IDE. Also need to install a Serial Terminal program that we can interact
+      
