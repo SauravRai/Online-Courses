@@ -69,3 +69,54 @@ Conclusion: Embedded systems are unique software platforms because they do not h
 Focusing on writing software that can officially code around those limitation Will be a prime focus for this course.
 To do this, we will need to bring into play many software tools and our knowledge of the processor. 
 
+************************************************************************************************************************************
+
+Video 3: Embedded Software Engineering
+
+-> Good software design needs to understand what the purpose and required operations specifications that a project needs. It's good to start by breaking a software concept down into flow diagrams or software blocks a flow diagram can depict, how a particular piece of software or algorithm should behave. Often it contains a same functional software contracts, such as conditional decisions and high level function calls.
+
+->  An example of a typical software organization can be seen with an OS-based design. There are low-level Device Drivers that interact with Hardware. There are software to help boot or start the system. There's an operating system to schedule processes and manages resources. There are shared libraries that many software components use and finally the higher level software reflects user applications.
+
+-> Writing code to direct the interface of the hardware is referred to as bare-metal firmware.  
+
+-> A firmware engineer requires deep knowledge of the hardware, not only for configuration of the bare-metal but also for hardware timing and limitations related to their software design. A software engineer's role will be to try and segment the hardware interface into something referred to as a HAL or Hardware Abstraction Layer.
+
+-> By design this interface works as a module component but they well defined interface. It allow software above the HAL layers become platform independent or agnostic to the specific hardware     
+   implementation, a concern layers, portable across platforms.
+   In general for each of the box in our software system, you need to know what the responsibilities are and how the different blocks interface one another.  
+    
+-> Some time into understanding the hardware specs that affect the software design as we try to engineer the best solution as embedded systems are highly specialized with limited resources
+    
+-> A  common software block design method is called component design. This is where we define small functional software blocks that have certain tasks.
+   We define the interface mechanism and the specs that each modules needs to adhere to. By doing this, you can build modulized software that is reusable across different
+   systems, architectures and platforms.      
+   
+-> On-target testing is just a term that refers to installing your code on to your particular embedded system instead of another.
+   So new chip sets or printed circuit boards had to be built with the desired hardware and connections so the software engineer knew what they needed to configure.
+   Thankfully, new hardware development techniques and system emulation provide quality resources for low level development.     
+   
+   Take for example the introduction of development kits and the SDKs that allow us to rapidly prototype software.
+   It's not only enabled engineers to begin writing low level code or firmware but also provided them with the physical resources to test code on
+ 
+-> There are five main development tools that allows software engineers to get started on development and testing of their applications.
+   These are first simulators, software that imitates or intended to hardware's behavior without the actual hardware. Emulators, the hardboard platform that imitates the operation of your
+   intended system. Compilers, it's the software that allows developers to pre-executable code for their intended architecture.
+   Installers, a software-hardware combination that allows compiled executable programs to be installed onto a platform.     
+    
+   And debuggers, a hardware-software solution that allows programmers to test and validate their executable programs. These tools are important because developing hardware takes time and
+   it's expensive. 
+
+-> Simulators and emulators will allow validation of design to occur before the arrival of hardware. Compilers, Installers, and debuggers will provide a quick development of features for your     
+   embedded target and an easy way to fix off our bugs.     
+
+-> Code should be such that is maintainable, testable, portable, robust, efficient and consistent. 
+
+-> By putting time into architecting your software, writing code effectively. Making it modular, you can extend the lifetime and re-usability of this pieces,
+   of your various projects and platforms. This obviously speeds up embedded systems prototyping time lines and the rate with which you can hit the market with your product. 
+
+-> C-Programming has benefits for both low level hardware interactions and high level software language features. This provides portability across different embedded platforms. 
+   C is high level enough that you do not need to know every detail about the very specific assembly level architectures. 
+
+-> Typical embedded engineers actually write a form of C called Embedded C. Embedded C differs from C because it puts a focus on the following features.
+   Efficient memory management, timing centric operations, direct hardware/IO control, code size constraints, and optimized execution. 
+   We can thinkn Embedded C as optimum features in minimum space and time. 
