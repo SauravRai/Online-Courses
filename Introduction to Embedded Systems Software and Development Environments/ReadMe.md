@@ -120,3 +120,30 @@ Video 3: Embedded Software Engineering
 -> Typical embedded engineers actually write a form of C called Embedded C. Embedded C differs from C because it puts a focus on the following features.
    Efficient memory management, timing centric operations, direct hardware/IO control, code size constraints, and optimized execution. 
    We can thinkn Embedded C as optimum features in minimum space and time. 
+
+Video 4: C programming review 
+
+-> Embedded C focuses on some certain features that are extremely relevant to low-level design. However, Embedded C and C program are still the same language. 
+
+-> Data types are actually architecture-dependent, and the C standard specifies minimum sizes for the data types.
+
+-> Translation between decimal and unsigned binary can be done very simply because unsigned numbers use a positional number system representation to express value.
+   Each position represents a value and a magnitude. 
+   
+-> Signed numbers are represented with the two's complement form. The conversion of signed numbers is a little more complex because they split the numbers of unique binary combinations in half. One    
+   half for your positive number set and the other one for your negative set. The positive bit mappings look just like unsigned numbers with a zero in the most significant position. The negatives are  
+   represented with a one in the most significant position, the base value represents a very large negative number. Lastly, fractional numbers can be represented with fixed point or floating point 
+   representations.  
+ 
+-> Embedded applications will favor the use of binary and hexadecimal for firmware as well as both signed and unsigned number representations. Data is assigned and manipulated using a variety of   
+   operators. There are multiple types of operators which include logical, bitwise, arithmetic, and relational. 
+    
+-> Bitwise operators are logic operators that operate on an individual bit basis instead of a full expression. The bitwise operators include right and left shifts, OR, AND, EXOR, and a one's    
+   complement or a bitwise invert. Arithmetic operators perform your typical math operations, such as add, subtract, multiply, divide, increment, decrement, and modulus
+   Also, bitwise and arithmetic operators can be combined with an assignment operator for simple expressions. 
+
+   Binary to Hexadecimal example:
+   0b0111_1111 -> 0x7F
+   0b1111_1111 -> 0xFF
+   0b1000_0000 -> 0x80
+******************************************************************************************************************************8   
