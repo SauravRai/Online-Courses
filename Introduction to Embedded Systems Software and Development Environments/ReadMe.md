@@ -150,3 +150,29 @@ Video 4: C programming review
    0b1000_0000 -> 0x80
    
 ******************************************************************************************************************************   
+Video 6: C standardization and team coding standards
+****************************************************** 
+
+-> Software languages will evolve over time just like software applications do. New versions with new features will be released, and software teams will need to make important decisions. What language 
+  should they use? What version should they support? 
+      
+-> Organizations like the International Electrical and Electronics Engineers IEEE, the International Organization for Standardization, ISO, and the American National Standards Institute, ANSI, are 
+  three groups that are involved with the process of standardizing various technical ideas including software. Without organizations like these, creating portable projects would require much more    
+  engineering overhead.       
+
+-> In 1970s the first unofficial standard of C programming was created by Ken Thompson and Dennis Richie. This classic version of C was referred to as K&R C.     
+   This version of C was the standard for C programming for about 15 years. More importantly, in 1989, ANSI-C standard was introduced, and in 1990, ISO adopted the standard officially.
+   These are referred to as C89 or C90. C99 came out about a decade later with some more features. And C11 is the most recent C standardization, and it has introduced many features specifically 
+   related to multi-threading.  
+   The reason why it is important to know about these standard diversions,is that many compilers have been built to default to various versions or even only support only one standard of C programming.
+
+-> In our projects, we will be specifying a specific standardized C version during compilation and utilizing important new features from C99, like the inline keyword.
+   This keyword will be crucial for how we design our firmware for embedded systems. 
+
+-> In addition to discussing C standardization, we will discuss the topics of a coding guideline, or a coding standard. A coding standards is simply a list of software guidelines a project
+   will need to be written to. These standards can be a mixture of requirements. There could be special format and documentation of the code needed. We many need to program the flow of routines in a   
+   certain way. How you name functions, files, and variables may need to fit a certain scheme. We may even have limits on the types of features, a developer can use on a platform.    
+    
+-> The Motor Industry Software Reliability Association introduced an industry standard coding guideline called MISRA C,
+   which was specifically aimed at embedded architectures.
+************************************************************************************************************************************    
