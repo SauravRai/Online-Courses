@@ -120,7 +120,8 @@ Video 3: Embedded Software Engineering
 -> Typical embedded engineers actually write a form of C called Embedded C. Embedded C differs from C because it puts a focus on the following features.
    Efficient memory management, timing centric operations, direct hardware/IO control, code size constraints, and optimized execution. 
    We can thinkn Embedded C as optimum features in minimum space and time. 
-
+   
+******************************************************************************************************************************   
 Video 4: C programming review 
 
 -> Embedded C focuses on some certain features that are extremely relevant to low-level design. However, Embedded C and C program are still the same language. 
@@ -151,7 +152,6 @@ Video 4: C programming review
    
 ******************************************************************************************************************************   
 Video 6: C standardization and team coding standards
-****************************************************** 
 
 -> Software languages will evolve over time just like software applications do. New versions with new features will be released, and software teams will need to make important decisions. What language 
   should they use? What version should they support? 
