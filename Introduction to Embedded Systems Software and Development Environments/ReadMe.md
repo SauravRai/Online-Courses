@@ -176,3 +176,38 @@ Video 6: C standardization and team coding standards
 -> The Motor Industry Software Reliability Association introduced an industry standard coding guideline called MISRA C,
    which was specifically aimed at embedded architectures.
 ************************************************************************************************************************************    
+
+Video 7: Development Environments Overview
+
+-> Development environments are key for software engineers as they are the means with which a software project is created. The embedded system target is important, but
+   all of the software is designed outside of that system. You need some method of generating an executable file and installing it onto the device. 
+    
+-> The primary goal of the development environment would be to allow engineers to write, compile, install and debug a program.
+   There will be many options for the tools you can write code in. But a project will often have very few options for the compiler, installer and debugger.
+   And unfortunate consequence to this will be that some of these programs may not be supported on every desktop OS    
+    
+-> In order to show all of the features that the development environment offers. We'll be using two different desktop environments. A command line in a Linux environment and
+   a vendor's Integrated Development Environment    
+
+-> Building software project using command line is the de facto standard amongst software engineers. The command line interface gives you a powerful level of control
+   of applications at the expense of user interface. You'll provide complex commands to the computer via text input. The command line is typically a power user interface.
+   Command lines are not regularly used because they are not as intuitive, but they exist on many computers.     
+   
+-> For command line we can ch0ose a Linux based machine. However, there are many distributions of Linux, you can choose from, such as RedHat, SUSE, Gentoo and Arch.     
+   This host machine will be used to run tests and simulate certain pieces of software. 
+   
+-> For compilation, we can use GNU's toolset to generate our software executable files. Installation and debugging will be an architecture dependent thing.
+   However, installation could be as simple as copying our executable or invoking an installer program. Debugging will depend on the target.
+   Host debugging can utilize a command line tool GDB, the GNU project debugger. On target debugging can be done through a network debugger or connected hardware debugger.
+   These two require some type of physical control of our microcontroller.
+   
+-> The second environment you want to interact with is a vendor provided integrated development enviroment. IDEs encapsulate all of the functionality that we get from the command line.
+   But they provide a much more interactive use interface. The IDE will hide all of the details of how the compiler, installer and debugger application are being invoked from the developer.
+   This interface is usually less ideal for software engineers because the trade off for a good UI might restrict a developer's capabilities.     
+   However, many features of the IDE provide more user friendly methods for developing and debugging an application including more informative memory graphics.  
+   
+-> These environments will be key, not only to the development of our projects but to the validation    
+    
+-> While using the IDE's inside the properties are all the fine controls of development environment. Here, we can modify compilers, installers, and debugger configurations.     
+   However, they make use command line variables to make the interface more dynamic. With the compiler integrated, we can build from this window by selecting from the drop down menu Project Build.   
+    
