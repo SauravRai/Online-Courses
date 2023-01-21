@@ -2,7 +2,7 @@ Course: Introduction to Embedded Systems Software and Development Environments
 *******************************************************************************
 WEEK 1 NOTES:
 _____________
-Video 0: Introduction to the course
+Video 1: Introduction to the course
 
 -> Nearly all embedded systems contain a processing core like a micro controlle and these require the design of low level software in order to function.
    However, software design is just one piece of the embedded system that a software engineer must be familiar with. 
@@ -23,7 +23,7 @@ Video 0: Introduction to the course
   
   
 ************************************************************************************************************************************
-Video 1:  Introduction to the Module  
+Video 2:  Introduction to the Module  
 
 -> In this module, we'll explore the components of the embedded systems design platform. Designing embedded systems takes a lot expertise in both hardware and software disciplines.
 
@@ -36,7 +36,7 @@ Video 1:  Introduction to the Module
 -> For your software development environment, you will interact directly with tools like GCC, GNU Make, Linux Command Line, Version Control, and an IDE. Also need to install a Serial Terminal program that we can interact
       
 ************************************************************************************************************************************
-Video 2: Introduction to Embedded Systems
+Video 3: Introduction to Embedded Systems
 
 ->  In this video, we'll introduce the concept of an embedded system and what basic components are needed to bring an embedded application to life.
     This includes a number of hardware and software elements, describe the target architecture and the design environment. Each embedded system has a special purpose and constraints in their system resources. Such as processing, memory, and peripherals. 
@@ -123,7 +123,7 @@ Video 3: Embedded Software Engineering
    We can thinkn Embedded C as optimum features in minimum space and time. 
    
 ******************************************************************************************************************************   
-Video 4: C programming review 
+Video 5: C programming review 
 
 -> Embedded C focuses on some certain features that are extremely relevant to low-level design. However, Embedded C and C program are still the same language. 
 
@@ -152,7 +152,7 @@ Video 4: C programming review
    0b1000_0000 -> 0x80
    
 ******************************************************************************************************************************   
-Video 6: C standardization and team coding standards
+Video 7: C standardization and team coding standards
 
 -> Software languages will evolve over time just like software applications do. New versions with new features will be released, and software teams will need to make important decisions. What language 
   should they use? What version should they support? 
@@ -178,7 +178,7 @@ Video 6: C standardization and team coding standards
    which was specifically aimed at embedded architectures.
 ************************************************************************************************************************************    
 
-Video 7: Development Environments Overview
+Video 8: Development Environments Overview
 
 -> Development environments are key for software engineers as they are the means with which a software project is created. The embedded system target is important, but
    all of the software is designed outside of that system. You need some method of generating an executable file and installing it onto the device. 
@@ -214,7 +214,7 @@ Video 7: Development Environments Overview
 
 ************************************************************************************************************************************    
     
-Video 8: Development Kits and Documentation (IMPORTANT ONE!!)
+Video 9: Development Kits and Documentation (IMPORTANT ONE!!)
 
 -> In this video, we'll look at the manufacturer and third party hardware development kits and the important documentation that is needed to configure your microcontroller. 
 
