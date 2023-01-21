@@ -290,3 +290,14 @@ Video 9: Development Kits and Documentation (IMPORTANT ONE!!)
 -> These onboard programmer debuggers provide much cheaper options for the software development tool sets you can use to interact with the desired
    embedded platform.         
         
+************************************************************************************************************************************    
+    
+Video 10: Version Control     
+        
+-> Git has become an industry leader in VCSs.
+-> In a Git repo, configuration and management files are stored in a folder called .git and these should not be modified by the user.
+   All changes and interactions should be done via Git commands.
+-> In linux environment, we can see your default editor with the echo $EDITOR command and can change it by running the export command. 
+-> We can check what are the differences in my code with the master code, we can use the git diff command.
+   git diff master_branch and my_branch
+   
