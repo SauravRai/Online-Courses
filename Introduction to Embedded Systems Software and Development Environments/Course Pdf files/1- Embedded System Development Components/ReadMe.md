@@ -1,6 +1,7 @@
 Course: Introduction to Embedded Systems Software and Development Environments
 *******************************************************************************
-
+WEEK 1 NOTES:
+_____________
 Video 0: Introduction to the course
 
 -> Nearly all embedded systems contain a processing core like a micro controlle and these require the design of low level software in order to function.
