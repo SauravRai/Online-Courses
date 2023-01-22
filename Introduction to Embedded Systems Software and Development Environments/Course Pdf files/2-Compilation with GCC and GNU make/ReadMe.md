@@ -21,4 +21,5 @@ Video 1 Introduction to Build Systems using GNU Toolsets
   (ii) Examine the pre-processors role in compilation, and
   (iii) Integrate new libraries to a build system.     
    
-   
+   ![image](https://user-images.githubusercontent.com/34119879/213915413-b60fb175-67bc-4c4b-acec-eced4335821e.png)
+
