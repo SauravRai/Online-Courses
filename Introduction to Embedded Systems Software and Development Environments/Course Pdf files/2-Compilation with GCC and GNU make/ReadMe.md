@@ -3,7 +3,8 @@ Compilation with GCC and GNU make
 (Refer to this for notes from the Course: https://github.com/MohammAAA/Introduction-to-Embedded-Systems-Software-and-Development-Environments )
 
 Week 2
-Video 1 Introduction to Build Systems using GNU Toolsets   
+
+Video 1: Introduction to Build Systems using GNU Toolsets   
 (Only Provided points which are missed in the notes)
   
 -> Providing specific guidance and optimizations during the build process, is important for our embedded platform as the assembly instructions are the objects that need to be optimized before they are 
