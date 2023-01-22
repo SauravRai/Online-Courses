@@ -1,6 +1,7 @@
 Compilation with GCC and GNU make
 *********************************
 (Refer to this for notes from the Course: https://github.com/MohammAAA/Introduction-to-Embedded-Systems-Software-and-Development-Environments )
+
 Week 2
 Video 1 Introduction to Build Systems using GNU Toolsets   
 (Only Provided points which are missed in the notes)
