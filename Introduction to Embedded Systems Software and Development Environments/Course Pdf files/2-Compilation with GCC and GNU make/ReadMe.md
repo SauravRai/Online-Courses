@@ -25,3 +25,11 @@ Video 1: Introduction to Build Systems using GNU Toolsets
    
    ![image](https://user-images.githubusercontent.com/34119879/213915413-b60fb175-67bc-4c4b-acec-eced4335821e.png)
 
+***************************************************************************************************************************************************
+
+Video 2: Compiling and Invoking GCC
+
+-> To translate just the main.c to assembly. We can run the following commands to stop GCC at compilation proper stage
+with the -s option.
+
+-> Now we run this flag with a -g flag, which adds debug symbols. This will help us debug executables later. 
