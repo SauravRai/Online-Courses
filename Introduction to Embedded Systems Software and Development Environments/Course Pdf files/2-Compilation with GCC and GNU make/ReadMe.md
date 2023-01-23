@@ -38,8 +38,6 @@ with the -s option.
 
 Video 4: Creating Header and Implementation Files
 
-Video 4: 
-
 -> C programming has a large variety of prewritten code called the standard libraries.
 
 -> We've likely used these before, such as standard IO and standard LIB or even the Math Library.
@@ -75,6 +73,5 @@ Video 4:
    Things like how our code with interface with each other, the purpose of a module, the purpose of the functions, will help us with our software classification and segmentation. 
 
 -> MOST IMPORTANT TAKE AWAY FROM THIS VIDEO:
-   Compile Time Switch for making our code support multiple platforms. How we do it is up to the Software engineers. A useful example was provided using the platform.h file in the course which we can 
-   check always.
+   Compile Time Switch for making our code support multiple platforms. How we do it is up to the Software engineers. A useful example was provided using      the platform.h file in the course which we can  check always.
     
