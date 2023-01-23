@@ -75,3 +75,40 @@ Video 4: Creating Header and Implementation Files
 -> MOST IMPORTANT TAKE AWAY FROM THIS VIDEO:
    Compile Time Switch for making our code support multiple platforms. How we do it is up to the Software engineers. A useful example was provided using      the platform.h file in the course which we can  check always.
     
+************************************************************************************************************************************    
+
+Video 5: Linkers 
+
+->Each architecture is very different from others, so the locator needs a special file to provide instructions about how to assign architecture specific addresses to the generic object file. This special file is called linker file or linker script
+
+-> Linker file provides the locator with information on where are the physical memory regions of the processor that will interface with the defined code regions. Linker file is architecture dependant
+
+-> Linker file specifies details such as:
+   (i) segment name
+   (ii) region name
+   (iii) memory sizes
+        We need to assign the exact start address of the data and code memory (origin), and also the memory length of each segment (length)
+   (iv) access permission
+        Each memory region specifies access permission such as read (R), write (W), and execute (X) for memory blocks
+
+-> Each memory region specifies access permissions such as read, write, and execute for memory blocks. Typically, the data memory, which will be in the SRAM, will be set as read and write, or RW.
+   This is because we will often read, modify, write data from SRAM. Code memory, on the other hand, will have read execute or RX permissions. This is because we will read our instructions from code   
+   memory like flash and execute them on the CPU. 
+   
+-> There are a handful of reasons why we want to make code memory not writable during program execution. One reason is to prevent an accidental overwrite 
+   of the code memory, causing the program to be corrupted. Additionally, this is also for security. By making the code memory only readable after programming, then we are making it harder for people 
+   who hack programs by exploiting the hardware to add new code into the code memory region. Some processors even cause a fatal error or exception if the processor tries to execute code out of SRAM or 
+   data memory regions. 
+
+
+-> After we've finished linking and locating, we may be interested in seeing how the memory allocation was done. For this, we can tell the linker to produce a map file.
+   This file will provide information on how all of these regions and memory segments were used and allocated. This map file also gives us specific addresses for the allocations. 
+
+-> Program memory is generally used for storing program code, although it can be used for storing data; while, as its name indicates, Data memory is used for storing data.
+   Program Memory (ROM) is used for permanent saving program being executed, while Data Memory (RAM) is used for temporarily storing and keeping intermediate results and variables. Program Memory    
+   (ROM) is used for permanent saving program (CODE) being executed. The memory is read only.
+    
+-> Linking is a complicated process and involves many different types of input files, including object files, library files, and linker files.
+   The process of relocating is yet another example where expertise on an architecture is needed, as we must define the memory regions of our architecture. Embedded software engineers must be involved 
+   in this, not only because of how they design their code, but also how it's going to fit into the memory space. 
+
