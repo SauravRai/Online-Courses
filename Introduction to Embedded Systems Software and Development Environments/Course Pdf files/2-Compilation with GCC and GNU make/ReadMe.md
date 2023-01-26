@@ -112,3 +112,39 @@ Video 5: Linkers
    The process of relocating is yet another example where expertise on an architecture is needed, as we must define the memory regions of our architecture. Embedded software engineers must be involved 
    in this, not only because of how they design their code, but also how it's going to fit into the memory space. 
 
+************************************************************************************************************************************    
+
+Video 6:
+
+Motivation for the Makefile:
+****************************
+-> To create a build system to simplify and improve our process of building a software target. The process software teams used to create a software product    using a lot of tools to build, test, and version and develop code. 
+   However this process can be very tedious. There are numerous commands and many flags that are needed for our advanced use of    the command line tools.      To memorize all of these options is not feasible   
+
+-> Next, software companies and projects usually support multiple build targets and architectures, both of which affect how we build. Now the concern has to    do with the large number of source files a typical software project will contain.
+   If we compare these concerns with our IDE build process, we do not see any differences. Behind the scenes the IDE is running any other same compile    commands for every single source file you have added to your project and each with many options.
+
+-> To automate the build process to save efforts and time is called as make
+
+-> Make is yet another free tool we get from the GNU tool chain that is utilized from the command line in the exact same way as GCC.
+   It lives in the executable program binaries folder on Linux and has many options just like GCC did.
+
+-> One big difference is that it is not part of the GCC tool chain as it is independent of the Compiler or the architecture you're using. Therefore there is    no arm-none-eabi prefix to the command.
+   This is a good thing since it provides more examples of software abstraction and independence for our course as we want to build a tool that can support    many types of compilers and architectures.
+
+-> The GNU Makers formally defined as a tool that controls generation of executables and non-source files of a program, from the program source files. This    is very important because we can use GNU Make to do more than just compile but also generate software dependencies, statistical information and many    other items. Best of all it's free
+ 
+-> Careful and educated use of this tool can help you create an extremely consistent software built With very low developer time for compiling.
+
+-> This Makefile provide special directions and procedures to make in order to create an executable file from a multitude of input files. Each make file    contains specific recipes for building particular targets. These recipes usually have some dependencies and produce some type of output.
+
+-> Think of including header files and C files as dependencies for a recipe to build a particular object file. These dependencies can be auto-generated and    output to .dep or .d files automatically by make.
+
+-> We could invoke make and we can execute many define targets with just the single command. Each target can follow a particular recipe depending on how you    defined your targets.
+
+-> Make can be configured to use whichever Complier Toolchain and build process of your choosing. You could use vendor provider toolchains or continue to    use GCC as the toolchain with the same process to generate files that we did with our five steps of building. Make could even be configured to support      multiple versions of a compiler or even multiple compilers with the same Makefile.
+
+-> Further, the same object files, Dependency Files and Map File can output from the process of Make with careful structure of your Make system.
+
+-> The one difference in writing our own Makefiles versus using an IDE is that the IDE is going to auto-generate their Makefiles depending on how you       configured your software project. Meaning it will generate all of the specific flags and linker files for the guards to your architecture. This is good    for parading a very simple interface for developers wanting to start fast. But very bad for maintainability and portability. 
+
