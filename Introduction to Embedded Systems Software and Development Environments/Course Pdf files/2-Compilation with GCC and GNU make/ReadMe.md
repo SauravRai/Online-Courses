@@ -117,7 +117,7 @@ Video 5: Linkers
 Video 6:
 
 Motivation for the Makefile:
-****************************
+
 -> To create a build system to simplify and improve our process of building a software target. The process software teams used to create a software product    using a lot of tools to build, test, and version and develop code. 
    However this process can be very tedious. There are numerous commands and many flags that are needed for our advanced use of    the command line tools.      To memorize all of these options is not feasible   
 
@@ -147,4 +147,22 @@ Motivation for the Makefile:
 -> Further, the same object files, Dependency Files and Map File can output from the process of Make with careful structure of your Make system.
 
 -> The one difference in writing our own Makefiles versus using an IDE is that the IDE is going to auto-generate their Makefiles depending on how you       configured your software project. Meaning it will generate all of the specific flags and linker files for the guards to your architecture. This is good    for parading a very simple interface for developers wanting to start fast. But very bad for maintainability and portability. 
+************************************************************************************************************************************    
 
+
+Video 7:
+Makefiles Part 1
+
+->  Automating the build process is just like writing software. In some cases, you will use shell scripts or other scripting languages to run a series of commands to generate needed executable files. These commands will of course be a mixture of our GCC commands to produce executables. In our case, you will be writing a makefile that stores all of the necessary configurations, flags, and commands in order to generate our build in other non-source files.
+************************************************************************************************************************************    
+
+
+Video 8:
+Makefiles Part 2
+
+->  As we learned earlier, make and makefiles can give us an opportunity to simplify and improve our build process. In this day and age of technology, the     need to support many architectures, compilers, or even versions of software, is pretty typical.
+    Not only do you want a code base that can be flexible to support these variations, we want your build system to support them as well. Just like with         our software design and architecture, we need to engineer good quality into our build system. We already learned some basic features of make and         makefiles to design our system. Now, we will learn some more advanced features to make our build systems even better.
+
+-> What if we wanted to make file that could support multiple architectures in addition to multiple build targets.
+   We could define completely different custom build targets for different compilers or architectures. Or we could have make do some conditional execution      and assignment in the makefile, based on input parameters or system information. This should sound familiar, since this is similar to the compile time       switches we have used before. We will implement them similarly as we did in C with compile time switches. Except, we might set some make file flags to       define different variables, flags, or applications that we should use in the make file.
+************************************************************************************************************************************    
