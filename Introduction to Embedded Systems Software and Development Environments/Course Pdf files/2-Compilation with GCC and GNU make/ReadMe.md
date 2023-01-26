@@ -166,3 +166,14 @@ Makefiles Part 2
 -> What if we wanted to make file that could support multiple architectures in addition to multiple build targets.
    We could define completely different custom build targets for different compilers or architectures. Or we could have make do some conditional execution      and assignment in the makefile, based on input parameters or system information. This should sound familiar, since this is similar to the compile time       switches we have used before. We will implement them similarly as we did in C with compile time switches. Except, we might set some make file flags to       define different variables, flags, or applications that we should use in the make file.
 ************************************************************************************************************************************    
+Video 9:
+Other Useful GNU Bin Tools
+
+-> The Assembler and Linker are actually two examples of the binutil applications. But these are the most popular ones.
+   The term the GNU Binutils is shorthand for Binary Utilities. This term just means that the utilities are executable binary applications. You can see in      the provided list that there are a lot of extra utilities at our disposal from the GNU tool chain. In addition, there are tools that help with debugging     that is not part of the Binutils grouping. 
+
+-> Each source we compile has code and data memory.
+
+-> Object dump is one utility. This utility is used to take an object file and dump information about that object file. One of the most useful          information of this tool is its ability to take an object file and dump the associated assembly code. From here a developer can investigate subtle bugs      that maybe happening at the assembly level or even analyze run time execution down to clock cycles.
+************************************************************************************************************************************    
+  
