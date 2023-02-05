@@ -18,3 +18,13 @@ Memory Architectures
 -> We need to provide the controller a minimum two to three pieces of information such as Read/Write, Data, Address, etc depending on the type of operation      we are intended to perform on the memory. 
 
 -> The most important characteristics about memory are memory capacity, volatility, access, power consumption, latency, durability, and transaction size.
+
+***************************************************************************************************************
+Video 3: Memory Segments
+
+-> Note that all the other memory segments has one unified address space and only the registers has a separate address space (register memory)
+   As for the register memory, we also need to map between the code and these platform specific registers at compile time, this occurs in something called    "register definition file" which allows address translation for external CPU segments to occur before linking.
+
+-> All the other memory map is provided in the linker script. 
+
+***************************************************************************************************************
