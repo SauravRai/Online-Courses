@@ -1,6 +1,6 @@
 Course: Introduction to Embedded Systems Software and Development Environments
 Or point to the link below for notes on the same page
-(https://github.com/MohammAAA/Introduction-to-Embedded-Systems-Software-and-Development-Environments)
+(https://github.com/SauravRai/Introduction-to-Embedded-Systems-Software-and-Development-Environments)
 *******************************************************************************
 WEEK 1 NOTES:
 _____________
