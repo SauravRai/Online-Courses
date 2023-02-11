@@ -28,3 +28,10 @@ Video 3: Memory Segments
 -> All the other memory map is provided in the linker script. 
 
 ***************************************************************************************************************
+Video 6 The Stack:
+
+-> The .data and .bss subsegments have data that get allocated at compile time and exist for the lifetime of the program
+   However, the stack subsegment gets reserved at compile time but the data gets allocated at runtime
+
+-> The data is allocated and de-allocated automatically based on the architecture by the compiler when writing in C BUT this is done either by the compiler    at the time of build or directly by the programmer if they're writing the code in assembly.
+***************************************************************************************************************
