@@ -26,3 +26,41 @@ Lecture 1: Architecture-Software Interface
 
 -> The first module of this course will give you your first step into writing C programs that are optimized for an architecture. By knowing the details of how memories manage, how to define portable and explicit data, and how to interface with peripheral memory to configure our micro-controller, we will be nearly ready to start writing an embedded application.
 *********************************************************************************************************************
+
+Lecture 2: Word Size and Data Types
+************************************
+-> In this video, we will discuss an architecture word size and the data types. An architecture is designed to implement assembly instructions. Depending on    the type of architecture, these instructions can be extremely complex, like in the case of a CISC machine, or these instructions can be very simple, like in the case of a RISC machine. 
+   (RISC VS CISC example described https://www.youtube.com/watch?v=vIphiGCWzIU)
+
+-> ARM, or advanced risk machine, contains many different versions of its architecture; however, we often refer to ARM as a 32-bit or a 64-bit architecture. These numbers represent the word size for two different versions of their RISC instruction sets.
+ 
+-> Physically in hardware, CPU registers and assembly operations will be designed around these sizes. 
+
+-> In C programming, you can define operations around a variety of sizes that do not necessarily map to the word size. However, every operation in C utilizes the word size and the instruction set architecture or ISA. 
+ 
+-> The fundamental unit of work for a processor is the instruction and the word size. The instructions are assembly operations that perform a small amount of work in a CPU. These instructions are fetched from the code memory, decoded and then executed by the CPU. Operations can range from arithmetic to logical to controlling program flow and load store operations of memory. The word is the size of work that each operation performs. For example, an architecture with a 32-bit word could perform an arithmetic add; these mean that the architecture will able to add two 32-bit numbers in one instruction.
+ 
+-> The general purpose registers in the CPU will be sized the same size as the word size. This is because these registers are where the operands are stored for each instruction. 
+
+-> The Cortex-M0 has 16 general purpose registers, most of which are available for use by the programmer. Some are reserved general purpose registers like the link register, the stack pointer and the program counter. The architecture is built around performing the operations on the size of the word with these registers. 
+
+-> However, that does not mean you cannot perform arithmetic or logic operations from C programming with larger or smaller sizes than the word. We oftenhave op erations that do 8-bit, 16-bit or even 64-bit math on a 32-bit architecture. The ISA may have specific assembly operations for these smaller size data actions or it may require multiple 32-bit operations to do larger sizes. 
+
+-> The word size is often confused with the instruction size or the bus width. The ARM Cortex-M series has a 32-bit instruction size. However, ARM can also be configured so that the CPI core can operate with a 16-bit instruction size. This is referred to as the thumb architecture. Thumb is just a reduced number of ARM instructions at a smaller instruction size. The size of instruction can limit the number of supported operations and different features       within each individual operation. These operations are usually referred to as an operation code or an opcode. 
+
+-> The bus width for ARM can vary depending on the different bus architectures you're using. You would typically see a bus width at least the size of the word or the instruction. This helps with efficiency because instructions are read from memory just like data is read. You would want to be able to fetch an instruction from memory in one memory fetch. The bus width does not necessarily have to be the word size, but the bus refers to many things. A bus will contain both data bits, address bits and control bits. 
+
+-> The data bits can be configured for ARM architecture, but usually for sizes equal to or larger than the word size. 
+   The address bits would usually map to the size of the word, as this is the way that we will address our microcontroller components within a memory map.Just like a pointer holds an address for a piece of data, an address must be provided to fetch a specific instruction at a given address. The address is referenced by a program counter and the instruction that is being execute is put into the instruction register. 
+
+-> Now you might be asking how does the word size relate to a C program type? When you write C programs, you have utilized a handful of data types and type modifiers for your variable declarations. These have specified size and sign of a type. The types included chars and integers. The modifiers included signed, unsigned, short and long. These types are somewhat ambiguous when it comes to physical sizes and memory. The C standard only guarantees a minimum size that each of these types might be. It's up to the architecture and the compiler to actually sign the sizes at build time. For instance, an integer can be 16-bits or 32-bits, depending on the architecture. The length and size ambiguity does not suffice for software engineers. Instead, we utilize some special types to help provide more insight on what exactly you are reserving in your architecture. These are referred to as the standard integer sizes and are standard practice to use. 
+
+-> There are three forms to these standard references. These include types that describe an exact size, a minimum size and a fast execution size. You can find these defined in your stdint.h library file. The standard types have much more clear definition. They start with a u-int or an int, which represent an unsigned integer or a signed integer. 
+   Following this is the number of bits this type will occupy. A uint8 will represent a unsigned 8-bit type, while an int32 represent a signed 32-bit integer. The underscore t at the end just indicates that this word represents a type. 
+
+-> In the standard int file, you will see two other types declared that look very similar to our u-int and int formats. These include the int_fast types and the int_least types. These are slightly different from the compiler perspective. The least type just requests that the compiler select a storage amount of at least n bits. So int_least8_t would be assigned at least 8-bit type. The fast type indicates that this data should be represented in a way that the    access and use of this type occurs as fast as possible in an architecture with at least n bits. So int_fast8 type would be implemented with at least 8-bits. However, it would likely be sized up to the size of the word. These types are set by the compiler or by using the typedef C keyword. 
+
+-> The typedef keyword allows us to create our own types and use them in a short form just like we do with ints, chars and floats. These are extremely helpful for defining structures, enumerations, or unions with custom type names. If we were to open an example of the standard int file, you will see these standard types defined and you could see the typedef keyword is used to map the u_int8 type to the unsigned char type. And the int32 type is type-defined as a signed long int. Many of the tenets of good software design were addressed in this video. 
+
+-> Understanding the architecture word size can help us choose data types that best utilize the architecture. By selecting smaller data sizes, we might be using less memory; but that can be causing excess overhead in operations. Larger types than the word will cause extra operations to do loads and stores of that data as well as the actual operation on that data. In C programming, the types we select can vary or are architecture and compiler-dependent. By utilizing the standard types, we can create unambiguous code that helps us create and write more portable and efficient software.
+*********************************************************************************************************************
