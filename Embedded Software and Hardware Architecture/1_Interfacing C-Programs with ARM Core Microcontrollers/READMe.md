@@ -64,3 +64,66 @@ Lecture 2: Word Size and Data Types
 
 -> Understanding the architecture word size can help us choose data types that best utilize the architecture. By selecting smaller data sizes, we might be using less memory; but that can be causing excess overhead in operations. Larger types than the word will cause extra operations to do loads and stores of that data as well as the actual operation on that data. In C programming, the types we select can vary or are architecture and compiler-dependent. By utilizing the standard types, we can create unambiguous code that helps us create and write more portable and efficient software.
 *********************************************************************************************************************
+Lecture 4:
+
+-> A microcontroller involves some type of memory in every single instruction. These can vary fetching an instruction from flash, interacting with a peripheral, manipulating a CPU register, or reading and writing the data memory. 
+
+-> We as the C programmer never really know the details of how these memory interactions occur. We only know that various configuration info, or program data, lives at a specific address. 
+
+-> Behind the scenes of each address, there's some complex hardware interactions that translate this addressto the piece of hardware. 
+
+-> We have many types of memories in a microcontroller. There's flash memory, which primarily stores our code, but can also store some data. The data that we store in code memory represents our constant data and initialization values for run-time variables that get stored in SRAM. 
+
+-> SRAM is primarily run-time read-write memory that is used for many different types of data, such as locals, globals,static memory, and dynamic memory storage. 
+
+-> There are many peripheral devices. Some that are private peripherals with specialized access and some that are general use, like timers and serial devices. Lastly, there are many core CPU Registers, both special purpose and general purpose. Core CPU Registers have their own identifiers and their own address space, as they live directly inside the CPU core. The general purpose registers are the working units for each instruction. The special purpose registers give us the ability to track our program state, like the stack pointer, the program counter, and the program status registers. We are not given direct access to these CPU Registers from a seed programming interface. Instead, we need to use something called Inline Assembly, mixed with C program routines to read or write these from a high level language. 
+
+-> The compiler will automatically convert your high level code to use these registers accordingly. We can perform many different operations in the CPU, such as logical, arithmetic, or even comparison operations. Each of these require the general purpose registers to perform their function. The CPU Registers are too small to store all of our program data. Thus we have memory like Flash and RAM to store needed information. We need to transfer information back and forth between these memories to get them into the CPU. 
+
+-> For instructions that operate on data, we first load data from RAM into a general purpose register. We can then perform our operation. We then store back    that data to memory after we're done with the operation. All processing occurs inside the CPU core and not external to the CPU core. This type of architecture as a Load-Store Architecture. 
+
+-> Unfortunately, we cannot operate directly on memory. The operation needs to occur inside the CPU. There are also two instructions that are needed to get the data to and from that location and those are the load and store. This type of process we refer to as a Read-Modify-Write. We first must load the value into the CPU in order to modify it. Then we must write it back after it's been modified. Regular reading and writing data to and from memory is a lot of overhead for the CPU, making our program less efficient. The compiler will attempt to try and limit data being repeatedly being    loaded and stored. And try to retain that value in the registers for a longer period of time. 
+
+-> However, you cannot keep data in the registers for forever. In some cases, we do not need to store them back. We can just perform a Read. Read-Modify-Write is regularly needed for interacting with Peripheral Registers. We often want to preserved most of the Peripheral Register. In this case, overhead can get worse. If we need to manipulate any data that is smaller than an eight bit chunk, this process is called bit manipulation. 
+
+-> Bit manipulation is required if you need to Read-Modify-Write a value from memory, but not the entire register, just a few bits. Typically, memory is designed to be only byte addressable, as bits are just too small to assign an address to. The architecture gives us the ability to load and store a byte, half word and word size type of data. There are not usually instructions that allow us to do bit-level loads in stores. 
+
+-> However, some hardware might be added to a CPU to help facilitate Read-Modify-Write process for bits. ARM architecture provides something called Bit-Banded Regions. These are sections of the address space where each address maps to a particular bit in a section of SRAM or a section of peripheral memory. 
+
+-> Bit-Banded memory operations are good for avoiding race conditions that could be introduced by doing a Read-Modify-Write operation. At any point in time during that operation, the state of a microcontroller can change and interrupt this process. By using Bit-Banded operations, the manipulation is handled in hardware and is therefore atomic. We will discuss atomics in more detail later in the course. 
+
+-> So how does your data get to and from the CPU? Our previous diagrams of memory system showed a generic interface to a microcontroller via one bus. This is extremely simplified version compared to what our cortex and processors are doing. We actually have many busses that our memory systems in the CPU interact with on a microcontroller. 
+
+-> ARM provides a bus technology to its customers called the AMBA specification, which stands for Advanced Microcontroller Bus Architecture. Regardless if our data is a word, half word, byte or even a bit, they use the same interface. For our cortex and processors, our bus interface is sized to 32 bits. 
+
+-> But the AMBA specification allows allows this bus width to vary in size. There are many types of different busses that uses this specification internal to the microcontroller. These include the system bus, the flash busses and the peripheral bus. These busses use a mixture of the bus architectures AHB and APB. AHB stands for AMBA High Performance Bus. 
+
+-> This bus architecture is used multiple times inside of an ARM microcontroller. The CPU core has two AHB busses that interact with both internal private peripherals and external private peripherals. 
+
+-> Internal private peripherals include things like the system control block, memory protection unit, and the nested vector interrupt controller. External peripheral bus connections include debug hardware. Usually interactions on the private peripheral bus or PPB, must have privileged access to read or write to the devices they are connected to. 
+
+-> AHB buses are used in more than just private connections. There are two more AHB buses used to connect the CPU to code memory and the CPU to data memory. The bus that connects to the SRAM is referred to as the system bus. In microcontrollers of the Cortex-M3 or Cortex-M4, you may have two different AHBbusses i nterfaced to Flash Memory, the I-Code and the D-Code. I-Code is used for fetching instructions, while D-Code is used to fetch data from code memory. By using two interfaces, we can fetch our constant data simultaneously with our code instructions from Flash Memory. 
+
+-> By using different Busses for SRAM and Flash, each can be configured to run at different frequencies optimized for power use and the memory architectures they are connected to. APB stands for Advanced Peripheral Bus. This bus is a Low Bandwidth Bus to interact with the peripheral devices, using group peripherals like timers, communication box and analog-to-digital converters. 
+
+-> One complicated aspect of the APB is it is not directly connected to the CPU. When you need write to the normal peripherals, data leaves CPU on the system bus and then is transferred to the peripheral bus via a bridge. The different bus interfaces that we discuss, are mapped to different memory
+regions in our address space. 
+
+-> By writing C code that uses pointers to our various end devices like SRAM or Peripheral, the architecture figures out how to route our data based on the address. Sometimes this data goes to extremely sensitive system control interfaces and sometimes this data goes to really slow general peripherals. Since our CPU is a Load-Store Architecture, these various bus interfaces are used regularly during the execution of our program.
+********************************************************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
