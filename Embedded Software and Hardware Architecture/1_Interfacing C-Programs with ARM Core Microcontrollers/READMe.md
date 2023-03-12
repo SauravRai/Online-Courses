@@ -64,7 +64,7 @@ Lecture 2: Word Size and Data Types
 
 -> Understanding the architecture word size can help us choose data types that best utilize the architecture. By selecting smaller data sizes, we might be using less memory; but that can be causing excess overhead in operations. Larger types than the word will cause extra operations to do loads and stores of that data as well as the actual operation on that data. In C programming, the types we select can vary or are architecture and compiler-dependent. By utilizing the standard types, we can create unambiguous code that helps us create and write more portable and efficient software.
 *********************************************************************************************************************
-Lecture 4:
+Lecture 4: Interacting with the Memory
 
 -> A microcontroller involves some type of memory in every single instruction. These can vary fetching an instruction from flash, interacting with a peripheral, manipulating a CPU register, or reading and writing the data memory. 
 
