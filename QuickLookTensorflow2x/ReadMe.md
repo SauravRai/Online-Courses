@@ -1,7 +1,7 @@
 This repository contents the learnings from the Pluralsight Tensorflow course. 
 
-Notes from Module 1 
-************************ 
+Module 1 Notes: Exploring the TensorFlow 2.0 Framework
+**********************************************************
 - Tensorflow 2 use of the high-level APIs with the keras has made designing and training the Neural network easier. While its eager execution mode makes prototyping and debugging models a lot easier. 
   The dynamic graph is great for prototyping.
 - The expectation at the end of the course: Able to harness the computational power of the Tensorflow 2.0
