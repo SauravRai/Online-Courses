@@ -64,7 +64,7 @@ https://www.3blue1brown.com/lessons/inverse-matrices
 https://www.youtube.com/watch?v=uQhTuRlWMxw&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab
 
 * Linear system of equations ( A X = V ) where A is the matrix/transformation that will be applied, X is the input vector and V is the output vector. 
-We are looking for a vector X which after applying A (a transformation) will be Y that is the output vector. 
+We are looking for a vector X which after applying A (a transformation) will be V that is the output vector. 
 
 * Inverse matrices/Transformation 
 A(inverse) x A = Transformation which does nothing (and that is Identity transformation)
