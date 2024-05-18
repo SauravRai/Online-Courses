@@ -63,5 +63,23 @@ https://www.3blue1brown.com/lessons/inverse-matrices
 
 https://www.youtube.com/watch?v=uQhTuRlWMxw&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab
 
+* Linear system of equations ( A X = V ) where A is the matrix/transformation that will be applied, X is the input vector and V is the output vector. 
+We are looking for a vector X which after applying A (a transformation) will be Y that is the output vector. 
+
+* Inverse matrices/Transformation 
+A(inverse) x A = Transformation which does nothing (and that is Identity transformation)
+If det =0, there exists no A (inverse) because we are now in a line (1 D space)
+ 
+* Rank: No of dimensions in the output of a transformation 
+Rank 1 means line and Rank 2 means a Plane, Rank 2 means 3D space.
+ 
+* Set of all possible such outputs Av (line, plane or 3d) is called as Column space (columns tells where basis vector lands)
+Column space is the span of columns or no of dimensions in the colmun space.
+ 
+* When Rank is equal to no of columns then matrix, it is called as full rank. 
+Zero vector is always present in columns space.
+ 
+* Null space (Kernel): The space/set of vectors that lands on the origin is called as the null space. They all land in the zero/origin.
+
 
 
