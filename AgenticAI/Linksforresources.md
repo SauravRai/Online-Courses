@@ -60,4 +60,8 @@ A nice tool to visualise the impact of each of the parameters and hyperparameter
 Just type tensorflow playground
 
 
+30/11/2025:
+***********
+- 
+
 
