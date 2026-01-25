@@ -1,0 +1,1 @@
+Place for all personally written notes.
