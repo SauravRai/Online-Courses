@@ -215,6 +215,34 @@ Treat safety as a feature: refusals, uncertainty, escalation, and PII-safe loggi
 ************************************************************************************************************************************
 
 
+banking_ai_agent/
+│
+├── app.py
+├── requirements.txt
+├── .env
+├── prompts/
+│   ├── baseline_prompt.txt
+│   ├── safety_prompt.txt
+│   └── rag_prompt.txt
+│
+├── data/
+│   ├── loan_policy.pdf
+│   ├── credit_card_faq.pdf
+│   └── banking_terms.pdf
+│
+├── vectorstore/
+│
+├── logs/
+│   ├── interactions.log
+│   └── errors.log
+│
+├── evaluation/
+│   ├── test_cases.json
+│   └── evaluation_report.md
+│
+└── screenshots/
+
+
 
 
 
