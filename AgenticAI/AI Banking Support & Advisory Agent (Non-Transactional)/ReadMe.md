@@ -1,3 +1,11 @@
+Quick Readme
+
+A complete end-to-end AI Agent Engineering project covering Prompt Engineering, RAG pipelines, memory, evaluation, debugging, safety, and deployment workflows. The repository is organized phase-wise (Phase 1 to Phase 9), with each folder containing source code, reports, logs, screenshots, Flowise exports, evaluations, and supporting documentation to demonstrate the full development lifecycle of production-ready AI agents.
+
+
+
+
+
 INTRODUCTION
 
 
@@ -215,32 +223,7 @@ Treat safety as a feature: refusals, uncertainty, escalation, and PII-safe loggi
 ************************************************************************************************************************************
 
 
-banking_ai_agent/
-│
-├── app.py
-├── requirements.txt
-├── .env
-├── prompts/
-│   ├── baseline_prompt.txt
-│   ├── safety_prompt.txt
-│   └── rag_prompt.txt
-│
-├── data/
-│   ├── loan_policy.pdf
-│   ├── credit_card_faq.pdf
-│   └── banking_terms.pdf
-│
-├── vectorstore/
-│
-├── logs/
-│   ├── interactions.log
-│   └── errors.log
-│
-├── evaluation/
-│   ├── test_cases.json
-│   └── evaluation_report.md
-│
-└── screenshots/
+
 
 
 
