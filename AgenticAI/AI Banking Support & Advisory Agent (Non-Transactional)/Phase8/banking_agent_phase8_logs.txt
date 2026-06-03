@@ -1,0 +1,212 @@
+2026-06-03 14:44:17,137 - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-06-03 14:44:18,133 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 14:44:18,735 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 14:44:19,281 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 14:44:19,830 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 14:44:20,374 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 14:44:20,906 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 14:44:21,447 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 14:44:22,076 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 14:46:30,272 - 
+Customer=What documents are required for a home loan?
+
+Memory={'loan_amount': None, 'loan_tenure': None, 'monthly_income': None}
+
+Feedback={'helpful': 0, 'not_helpful': 0}
+
+ResponseStyle=NORMAL
+
+Latency=0.01 seconds
+
+Agent=What loan amount would you like to borrow?
+
+-----------------------------------
+
+2026-06-03 14:47:34,381 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 14:47:41,230 - HTTP Request: POST https://openai.vocareum.com/v1/responses "HTTP/1.1 200 OK"
+2026-06-03 14:47:41,280 - 
+Customer=20 lakh
+
+Memory={'loan_amount': 2000000, 'loan_tenure': None, 'monthly_income': None}
+
+Feedback={'helpful': 0, 'not_helpful': 0}
+
+ResponseStyle=NORMAL
+
+Latency=7.42 seconds
+
+Agent=For a ₹20 lakh home loan, the current interest rate is **8.25% per annum**.
+
+Approx. annual interest: **₹1,65,000**.
+
+-----------------------------------
+
+2026-06-03 14:48:42,208 - 
+Customer=I want a 50 lakh home loan
+
+Memory={'loan_amount': 5000000, 'loan_tenure': None, 'monthly_income': None}
+
+Feedback={'helpful': 0, 'not_helpful': 0}
+
+ResponseStyle=NORMAL
+
+Latency=0.01 seconds
+
+Agent=What loan tenure would you prefer?
+
+-----------------------------------
+
+2026-06-03 14:49:18,029 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 14:49:22,319 - HTTP Request: POST https://openai.vocareum.com/v1/responses "HTTP/1.1 200 OK"
+2026-06-03 14:49:22,320 - 
+Customer=20 lakh
+
+Memory={'loan_amount': 2000000, 'loan_tenure': None, 'monthly_income': None}
+
+Feedback={'helpful': 0, 'not_helpful': 0}
+
+ResponseStyle=NORMAL
+
+Latency=4.78 seconds
+
+Agent=For a home loan of ₹20 lakh, the current interest rate is **8.25% per annum**.
+
+-----------------------------------
+
+2026-06-03 14:49:32,607 - 
+Customer=Am I eligible for a loan?
+
+Memory={'loan_amount': 2000000, 'loan_tenure': None, 'monthly_income': None}
+
+Feedback={'helpful': 0, 'not_helpful': 0}
+
+ResponseStyle=NORMAL
+
+Latency=0.01 seconds
+
+Agent=[TOOL USED: eligibility]
+Potentially Eligible
+
+-----------------------------------
+
+2026-06-03 14:50:39,784 - 
+Customer=What is EMI?
+
+Memory={'loan_amount': 2000000, 'loan_tenure': None, 'monthly_income': None}
+
+Feedback={'helpful': 0, 'not_helpful': 0}
+
+ResponseStyle=NORMAL
+
+Latency=0.01 seconds
+
+Agent=[TOOL USED: emi]
+I need the loan tenure before calculating EMI.
+
+-----------------------------------
+
+2026-06-03 14:52:31,146 - 
+Customer=What documents are required for a home loan?
+
+Memory={'loan_amount': 2000000, 'loan_tenure': None, 'monthly_income': None}
+
+Feedback={'helpful': 0, 'not_helpful': 0}
+
+ResponseStyle=NORMAL
+
+Latency=0.01 seconds
+
+Agent=What loan tenure would you prefer?
+
+-----------------------------------
+
+2026-06-03 14:52:40,301 - 
+Customer=feedback not helpful
+
+Memory={'loan_amount': 2000000, 'loan_tenure': None, 'monthly_income': None}
+
+Feedback={'helpful': 0, 'not_helpful': 1}
+
+ResponseStyle=NORMAL
+
+Latency=0.02 seconds
+
+Agent=Thank you for your feedback. Future responses may adapt based on this feedback.
+
+-----------------------------------
+
+2026-06-03 14:52:42,686 - 
+Customer=feedback not helpful
+
+Memory={'loan_amount': 2000000, 'loan_tenure': None, 'monthly_income': None}
+
+Feedback={'helpful': 0, 'not_helpful': 2}
+
+ResponseStyle=NORMAL
+
+Latency=0.02 seconds
+
+Agent=Thank you for your feedback. Future responses may adapt based on this feedback.
+
+-----------------------------------
+
+2026-06-03 14:52:45,844 - 
+Customer=feedback not helpful
+
+Memory={'loan_amount': 2000000, 'loan_tenure': None, 'monthly_income': None}
+
+Feedback={'helpful': 0, 'not_helpful': 3}
+
+ResponseStyle=DETAILED
+
+Latency=0.02 seconds
+
+Agent=Thank you for your feedback. Future responses may adapt based on this feedback.
+
+-----------------------------------
+
+2026-06-03 14:52:48,369 - 
+Customer=feedback not helpful
+
+Memory={'loan_amount': 2000000, 'loan_tenure': None, 'monthly_income': None}
+
+Feedback={'helpful': 0, 'not_helpful': 4}
+
+ResponseStyle=DETAILED
+
+Latency=0.02 seconds
+
+Agent=Thank you for your feedback. Future responses may adapt based on this feedback.
+
+-----------------------------------
+
+2026-06-03 14:52:56,939 - 
+Customer=What documents are required for a home loan?
+
+Memory={'loan_amount': 2000000, 'loan_tenure': None, 'monthly_income': None}
+
+Feedback={'helpful': 0, 'not_helpful': 4}
+
+ResponseStyle=DETAILED
+
+Latency=0.01 seconds
+
+Agent=What loan tenure would you prefer?
+
+-----------------------------------
+
+2026-06-03 14:53:15,170 - 
+Customer=Transfer ₹20,000 to another account
+
+Memory={'loan_amount': 2000000, 'loan_tenure': None, 'monthly_income': None}
+
+Feedback={'helpful': 0, 'not_helpful': 4}
+
+ResponseStyle=DETAILED
+
+Latency=0.01 seconds
+
+Agent=I cannot perform banking transactions or money transfers.
+
+-----------------------------------
+

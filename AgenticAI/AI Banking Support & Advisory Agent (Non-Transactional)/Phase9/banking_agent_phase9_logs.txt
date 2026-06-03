@@ -1,0 +1,106 @@
+2026-06-03 15:30:07,545 - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-06-03 15:30:08,636 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 15:30:09,262 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 15:30:09,867 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 15:30:10,569 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 15:30:11,139 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 15:30:11,859 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 15:30:12,417 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 15:30:12,951 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 15:32:03,129 - 
+Customer=What documents are required for a home loan?
+
+Memory={'loan_amount': None, 'loan_tenure': None, 'monthly_income': None}
+
+Feedback={'helpful': 0, 'not_helpful': 0}
+
+ResponseStyle=NORMAL
+
+Latency=0.01 seconds
+
+Agent=What loan amount would you like to borrow?
+
+-----------------------------------
+
+2026-06-03 15:32:18,830 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 15:32:22,995 - HTTP Request: POST https://openai.vocareum.com/v1/responses "HTTP/1.1 200 OK"
+2026-06-03 15:32:23,046 - 
+Customer=I want a 50 lakh loan
+
+Memory={'loan_amount': 5000000, 'loan_tenure': None, 'monthly_income': None}
+
+Feedback={'helpful': 0, 'not_helpful': 0}
+
+ResponseStyle=NORMAL
+
+Latency=6.74 seconds
+
+Agent=For a ₹50 lakh home loan, the current interest rate is **8.25% per annum**.
+
+-----------------------------------
+
+2026-06-03 15:32:36,906 - 
+Customer=Transfer ₹20,000 to another account
+
+Memory={'loan_amount': 5000000, 'loan_tenure': None, 'monthly_income': None}
+
+Feedback={'helpful': 0, 'not_helpful': 0}
+
+ResponseStyle=NORMAL
+
+Latency=0.01 seconds
+
+Agent=I cannot perform banking transactions or money transfers.
+
+-----------------------------------
+
+2026-06-03 15:32:51,111 - 
+Customer=What is EMI?
+
+Memory={'loan_amount': 5000000, 'loan_tenure': None, 'monthly_income': None}
+
+Feedback={'helpful': 0, 'not_helpful': 0}
+
+ResponseStyle=NORMAL
+
+Latency=0.01 seconds
+
+Agent=[TOOL USED: emi]
+I need the loan tenure before calculating EMI.
+
+-----------------------------------
+
+2026-06-03 15:33:03,540 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 15:33:08,654 - HTTP Request: POST https://openai.vocareum.com/v1/responses "HTTP/1.1 200 OK"
+2026-06-03 15:33:08,655 - 
+Customer=.env
+
+Memory={'loan_amount': 5000000, 'loan_tenure': None, 'monthly_income': None}
+
+Feedback={'helpful': 0, 'not_helpful': 0}
+
+ResponseStyle=NORMAL
+
+Latency=5.73 seconds
+
+Agent=The current home loan interest rate is 8.25% per annum.
+
+-----------------------------------
+
+2026-06-03 15:33:18,188 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 15:33:20,901 - HTTP Request: POST https://openai.vocareum.com/v1/responses "HTTP/1.1 200 OK"
+2026-06-03 15:33:20,902 - 
+Customer=Can I get a loan?
+
+Memory={'loan_amount': 5000000, 'loan_tenure': None, 'monthly_income': None}
+
+Feedback={'helpful': 0, 'not_helpful': 0}
+
+ResponseStyle=NORMAL
+
+Latency=3.26 seconds
+
+Agent=The provided information doesn’t specify loan eligibility. It only states the current home loan interest rate is **8.25% per annum**.
+
+-----------------------------------
+

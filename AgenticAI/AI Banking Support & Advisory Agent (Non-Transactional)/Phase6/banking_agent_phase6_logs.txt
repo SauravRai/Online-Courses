@@ -1,0 +1,214 @@
+2026-06-03 12:37:46,703 - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-06-03 12:37:47,709 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 12:37:48,393 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 12:37:48,896 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 12:37:49,482 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 12:37:52,514 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 12:37:53,129 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 12:37:53,839 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 12:37:54,420 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 12:38:08,251 - 
+Customer=I want a home loan
+
+Memory={'loan_amount': None, 'loan_tenure': None, 'monthly_income': None}
+
+Agent=What loan amount would you like to borrow?
+
+-----------------------------------
+
+2026-06-03 12:38:19,400 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 12:38:23,560 - HTTP Request: POST https://openai.vocareum.com/v1/responses "HTTP/1.1 200 OK"
+2026-06-03 12:38:23,610 - 
+Customer=50 lakh
+
+Memory={'loan_amount': 5000000, 'loan_tenure': None, 'monthly_income': None}
+
+Agent=For a home loan of ₹50 lakh, the current interest rate is **8.25% per annum**.
+
+Required documents:
+- Identity Proof
+- Address Proof
+- Income Proof
+- Property Documents
+
+-----------------------------------
+
+2026-06-03 12:38:37,684 - 
+Customer=calculate emi
+
+Memory={'loan_amount': 5000000, 'loan_tenure': None, 'monthly_income': None}
+
+Agent=[TOOL USED: emi]
+I need the loan tenure before calculating EMI.
+
+-----------------------------------
+
+2026-06-03 12:38:48,174 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 12:38:52,990 - HTTP Request: POST https://openai.vocareum.com/v1/responses "HTTP/1.1 200 OK"
+2026-06-03 12:38:52,991 - 
+Customer=20 years
+
+Memory={'loan_amount': 5000000, 'loan_tenure': 240, 'monthly_income': None}
+
+Agent=For a **20-year** term, the current interest rate provided is **8.25% per annum**.
+
+If you want an EMI or total interest calculation, please provide the **loan amount**.
+
+-----------------------------------
+
+2026-06-03 12:39:04,530 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 12:39:10,061 - HTTP Request: POST https://openai.vocareum.com/v1/responses "HTTP/1.1 200 OK"
+2026-06-03 12:39:10,062 - 
+Customer=50 lakh
+
+Memory={'loan_amount': 5000000, 'loan_tenure': 240, 'monthly_income': None}
+
+Agent=For a **₹50 lakh home loan**, the current interest rate is **8.25% per annum**.
+
+Approximate yearly interest at this rate: **₹4,12,500**.
+
+Required documents:
+- Identity Proof
+- Address Proof
+- Income Proof
+- Property Documents
+
+-----------------------------------
+
+2026-06-03 12:41:08,024 - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-06-03 12:41:08,971 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 12:41:09,585 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 12:41:10,052 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 12:41:10,609 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 12:41:11,234 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 12:41:12,424 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 12:41:13,024 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 12:41:13,619 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 12:41:22,533 - 
+Customer=calculate emi 
+
+Memory={'loan_amount': 5000000, 'loan_tenure': 240, 'monthly_income': None}
+
+Agent=[TOOL USED: emi]
+Estimated EMI: ₹43391.16
+
+-----------------------------------
+
+2026-06-03 12:43:08,140 - 
+Customer=reset memory
+
+Memory={'loan_amount': None, 'loan_tenure': None, 'monthly_income': None}
+
+Agent=Conversation memory has been reset.
+
+-----------------------------------
+
+2026-06-03 12:43:16,980 - 
+Customer=calculate emi
+
+Memory={'loan_amount': None, 'loan_tenure': None, 'monthly_income': None}
+
+Agent=[TOOL USED: emi]
+I need the loan amount before calculating EMI.
+
+-----------------------------------
+
+2026-06-03 12:44:46,765 - 
+Customer=What documents are required for a home loan?
+
+Memory={'loan_amount': None, 'loan_tenure': None, 'monthly_income': None}
+
+Agent=What loan amount would you like to borrow?
+
+-----------------------------------
+
+2026-06-03 12:45:07,371 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 12:45:13,452 - HTTP Request: POST https://openai.vocareum.com/v1/responses "HTTP/1.1 200 OK"
+2026-06-03 12:45:13,502 - 
+Customer=20 Lakh
+
+Memory={'loan_amount': 2000000, 'loan_tenure': None, 'monthly_income': None}
+
+Agent=For a **₹20 lakh home loan**, the current interest rate is **8.25% per annum**.
+
+Approximate interest for 1 year: **₹1,65,000**  
+Approximate monthly interest: **₹13,750**  
+
+Required documents:
+- Identity Proof
+- Address Proof
+- Income Proof
+- Property Documents
+
+-----------------------------------
+
+2026-06-03 12:46:41,320 - 
+Customer=Am I eligible for a home loan? 
+
+Memory={'loan_amount': 2000000, 'loan_tenure': None, 'monthly_income': None}
+
+Agent=What loan tenure would you prefer?
+
+-----------------------------------
+
+2026-06-03 12:47:11,492 - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-06-03 12:47:12,402 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 12:47:12,887 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 12:47:13,410 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 12:47:14,043 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 12:47:14,565 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 12:47:15,221 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 12:47:16,578 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 12:47:17,715 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 12:47:36,708 - 
+Customer=Am I eligible for a home loan? 
+
+Memory={'loan_amount': 2000000, 'loan_tenure': None, 'monthly_income': None}
+
+Agent=What loan tenure would you prefer?
+
+-----------------------------------
+
+2026-06-03 12:47:51,099 - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-06-03 12:47:52,159 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 12:47:52,761 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 12:47:53,420 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 12:47:54,068 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 12:47:54,626 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 12:47:55,216 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 12:47:55,724 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 12:47:56,336 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 12:48:11,378 - 
+Customer=Transfer ₹20,000 to another account
+
+Memory={'loan_amount': 2000000, 'loan_tenure': None, 'monthly_income': None}
+
+Agent=I cannot perform banking transactions or money transfers.
+
+-----------------------------------
+
+2026-06-03 12:49:03,381 - 
+Customer=What documents are required for a home loan?
+
+Memory={'loan_amount': 2000000, 'loan_tenure': None, 'monthly_income': None}
+
+Agent=What loan tenure would you prefer?
+
+-----------------------------------
+
+2026-06-03 12:49:33,196 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 12:49:36,051 - HTTP Request: POST https://openai.vocareum.com/v1/responses "HTTP/1.1 200 OK"
+2026-06-03 12:49:36,101 - 
+Customer=documents needed
+
+Memory={'loan_amount': 2000000, 'loan_tenure': None, 'monthly_income': None}
+
+Agent=The documents needed are:
+
+- Identity Proof  
+- Address Proof  
+- Income Proof  
+- Property Documents
+
+-----------------------------------
+

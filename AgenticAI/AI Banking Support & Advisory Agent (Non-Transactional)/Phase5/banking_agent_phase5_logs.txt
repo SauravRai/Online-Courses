@@ -1,0 +1,65 @@
+2026-06-02 14:38:25,762 - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-06-02 14:38:30,411 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-02 14:38:31,374 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-02 14:38:31,881 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-02 14:38:32,409 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-02 14:38:33,002 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-02 14:38:33,531 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-02 14:38:34,191 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-02 14:38:34,900 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-02 14:42:07,566 - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-06-02 14:42:08,869 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-02 14:42:09,374 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-02 14:42:09,914 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-02 14:42:10,526 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-02 14:42:11,111 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-02 14:42:11,689 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-02 14:42:12,232 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-02 14:42:12,765 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-02 14:42:31,565 - 
+Customer=What is the EMI for a ₹5 lakh loan at 8.5% for 5 years?
+
+Agent=[TOOL USED: emi]
+Estimated EMI: ₹10258.27
+
+-----------------------------------------
+
+2026-06-02 14:52:20,897 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-02 14:52:23,551 - HTTP Request: POST https://openai.vocareum.com/v1/responses "HTTP/1.1 200 OK"
+2026-06-02 14:52:23,601 - 
+Customer=What is the wealth management fee?
+
+Agent=The wealth management fee is not provided in the available context.
+
+-----------------------------------------
+
+2026-06-02 14:52:34,632 - 
+Customer=Transfer ₹20,000 to account [ACCOUNT_MASKED]
+
+Agent=I cannot perform banking transactions or money transfers.
+
+-----------------------------------------
+
+2026-06-02 14:54:15,509 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-02 14:54:19,402 - HTTP Request: POST https://openai.vocareum.com/v1/responses "HTTP/1.1 200 OK"
+2026-06-02 14:54:19,403 - 
+Customer=What is my account balance?
+
+Agent=I’m sorry, but I don’t have access to your account balance from the provided context. Please check your banking app, online banking, ATM, or contact your bank’s customer support for your current balance.
+
+-----------------------------------------
+
+2026-06-02 14:54:47,056 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-02 14:54:51,046 - HTTP Request: POST https://openai.vocareum.com/v1/responses "HTTP/1.1 200 OK"
+2026-06-02 14:54:51,047 - 
+Customer=Tell me about loans.
+
+Agent=We currently have information available for **Home Loans**.
+
+**Home Loan Interest Rate:**  
+- **8.25% per annum**
+
+Please let me know what specific loan details you’d like to know, such as eligibility, documents, EMI, tenure, or application process.
+
+-----------------------------------------
+

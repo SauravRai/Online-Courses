@@ -1,0 +1,162 @@
+2026-06-03 14:12:53,963 - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-06-03 14:12:54,929 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 14:12:55,470 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 14:12:56,195 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 14:12:56,751 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 14:12:57,287 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 14:12:57,814 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 14:12:58,367 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 14:12:58,861 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 14:14:10,160 - 
+Customer=What documents are required for a home loan? 
+
+Memory={'loan_amount': None, 'loan_tenure': None, 'monthly_income': None}
+
+Feedback={'helpful': 0, 'not_helpful': 0}
+
+ResponseStyle=NORMAL
+
+Agent=What loan amount would you like to borrow?
+
+-----------------------------------
+
+2026-06-03 14:14:21,937 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 14:14:26,897 - HTTP Request: POST https://openai.vocareum.com/v1/responses "HTTP/1.1 200 OK"
+2026-06-03 14:14:26,947 - 
+Customer=20 Lakh
+
+Memory={'loan_amount': 2000000, 'loan_tenure': None, 'monthly_income': None}
+
+Feedback={'helpful': 0, 'not_helpful': 0}
+
+ResponseStyle=NORMAL
+
+Agent=For a ₹20 lakh home loan, the current interest rate is **8.25% per annum**.
+
+Approx. annual interest: **₹1,65,000**.
+
+-----------------------------------
+
+2026-06-03 14:14:34,973 - 
+Customer=feedback not useful
+
+Memory={'loan_amount': 2000000, 'loan_tenure': None, 'monthly_income': None}
+
+Feedback={'helpful': 0, 'not_helpful': 0}
+
+ResponseStyle=NORMAL
+
+Agent=Thank you for your feedback. Future responses may adapt based on this feedback.
+
+-----------------------------------
+
+2026-06-03 14:14:49,342 - 
+Customer=feedback not useful
+
+Memory={'loan_amount': 2000000, 'loan_tenure': None, 'monthly_income': None}
+
+Feedback={'helpful': 0, 'not_helpful': 0}
+
+ResponseStyle=NORMAL
+
+Agent=Thank you for your feedback. Future responses may adapt based on this feedback.
+
+-----------------------------------
+
+2026-06-03 14:14:55,813 - 
+Customer=feedback not useful
+
+Memory={'loan_amount': 2000000, 'loan_tenure': None, 'monthly_income': None}
+
+Feedback={'helpful': 0, 'not_helpful': 0}
+
+ResponseStyle=NORMAL
+
+Agent=Thank you for your feedback. Future responses may adapt based on this feedback.
+
+-----------------------------------
+
+2026-06-03 14:15:18,289 - 
+Customer=What documents are required for a home loan?
+
+Memory={'loan_amount': 2000000, 'loan_tenure': None, 'monthly_income': None}
+
+Feedback={'helpful': 0, 'not_helpful': 0}
+
+ResponseStyle=NORMAL
+
+Agent=What loan tenure would you prefer?
+
+-----------------------------------
+
+2026-06-03 14:15:28,929 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 14:15:32,788 - HTTP Request: POST https://openai.vocareum.com/v1/responses "HTTP/1.1 200 OK"
+2026-06-03 14:15:32,789 - 
+Customer=20 years
+
+Memory={'loan_amount': 2000000, 'loan_tenure': 240, 'monthly_income': None}
+
+Feedback={'helpful': 0, 'not_helpful': 0}
+
+ResponseStyle=NORMAL
+
+Agent=Could you please clarify what you mean by “20 years”?
+
+-----------------------------------
+
+2026-06-03 14:15:39,185 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 14:15:42,808 - HTTP Request: POST https://openai.vocareum.com/v1/responses "HTTP/1.1 200 OK"
+2026-06-03 14:15:42,810 - 
+Customer=yes
+
+Memory={'loan_amount': 2000000, 'loan_tenure': 240, 'monthly_income': None}
+
+Feedback={'helpful': 0, 'not_helpful': 0}
+
+ResponseStyle=NORMAL
+
+Agent=Please clarify your request. If you’re reporting unauthorized transactions, the case must be escalated immediately.
+
+-----------------------------------
+
+2026-06-03 14:16:13,182 - 
+Customer=feedback not useful
+
+Memory={'loan_amount': 2000000, 'loan_tenure': 240, 'monthly_income': None}
+
+Feedback={'helpful': 0, 'not_helpful': 0}
+
+ResponseStyle=NORMAL
+
+Agent=Thank you for your feedback. Future responses may adapt based on this feedback.
+
+-----------------------------------
+
+2026-06-03 14:16:23,552 - 
+Customer=feedback not useful
+
+Memory={'loan_amount': 2000000, 'loan_tenure': 240, 'monthly_income': None}
+
+Feedback={'helpful': 0, 'not_helpful': 0}
+
+ResponseStyle=NORMAL
+
+Agent=Thank you for your feedback. Future responses may adapt based on this feedback.
+
+-----------------------------------
+
+2026-06-03 14:16:46,922 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-03 14:16:50,758 - HTTP Request: POST https://openai.vocareum.com/v1/responses "HTTP/1.1 200 OK"
+2026-06-03 14:16:50,760 - 
+Customer=What loan tenure would you prefer?
+
+Memory={'loan_amount': 2000000, 'loan_tenure': 240, 'monthly_income': None}
+
+Feedback={'helpful': 0, 'not_helpful': 0}
+
+ResponseStyle=NORMAL
+
+Agent=The provided context only states the home loan interest rate is **8.25% per annum**; it does not specify available loan tenure options.
+
+-----------------------------------
+

@@ -1,0 +1,5 @@
+2026-05-31 10:37:23,773 - Customer=What documents are required for a home loan? | Agent=Typical home loan documents include identity proof, address proof, income proof, bank statements, and property documents.
+2026-05-31 10:37:47,410 - Customer=Which credit card offers travel rewards? | Agent=Travel reward credit cards generally offer air miles, reward points, and airport lounge access.
+2026-05-31 10:38:09,633 - Customer=What is the EMI for a ₹5 lakh loan? | Agent=EMI support is available, but this baseline version cannot perform EMI calculations yet.
+2026-05-31 10:38:42,751 - Customer=My account was charged twice. | Agent=This issue requires human review. Please contact customer support immediately. Escalation Recommended.
+2026-05-31 10:38:53,192 - Customer=Transfer ₹20,000 to another account. | Agent=I cannot perform banking transactions. Please use official banking channels.

@@ -1,0 +1,66 @@
+2026-05-31 16:00:47,208 - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-05-31 16:00:50,848 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-31 16:00:51,475 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-31 16:00:52,056 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-31 16:00:52,576 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-31 16:00:53,315 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-31 16:00:53,891 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-31 16:00:54,434 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-31 16:00:54,920 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-31 16:01:32,566 - HTTP Request: POST https://openai.vocareum.com/v1/responses "HTTP/1.1 200 OK"
+2026-05-31 16:01:33,166 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-31 16:01:35,178 - HTTP Request: POST https://openai.vocareum.com/v1/responses "HTTP/1.1 200 OK"
+2026-05-31 16:01:35,179 - 
+Customer=What is the current home loan interest rate?
+
+WITHOUT RETRIEVAL:
+Home loan interest rates can change frequently and depend on factors like the loan type, amount, term, deposit/equity, and your credit profile.
+
+For the most current home loan interest rate, please check the bank’s official website, mobile app, or contact a home loan specialist. If you tell me the type of home loan you’re interested in—fixed, variable, first-home buyer, refinance, or investment—I can help explain what to look for.
+
+WITH RETRIEVAL:
+The current home loan interest rate is **8.25% per annum**.
+
+---------------------------------------------------
+
+2026-05-31 16:02:58,427 - HTTP Request: POST https://openai.vocareum.com/v1/responses "HTTP/1.1 200 OK"
+2026-05-31 16:02:58,982 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-31 16:03:00,756 - HTTP Request: POST https://openai.vocareum.com/v1/responses "HTTP/1.1 200 OK"
+2026-05-31 16:03:00,757 - 
+Customer=What are the benefits of the Travel Rewards Credit Card?
+
+WITHOUT RETRIEVAL:
+The Travel Rewards Credit Card typically offers benefits such as:
+
+- **Earn rewards on purchases** — collect points or miles for everyday spending and travel purchases.
+- **Redeem for travel** — use rewards toward flights, hotels, car rentals, cruises, or statement credits for travel.
+- **No foreign transaction fees** — helpful when making purchases outside the country.
+- **Travel protections** — may include trip cancellation/interruption coverage, lost luggage reimbursement, or travel accident insurance.
+- **Rental car coverage** — secondary or primary auto rental collision coverage may be included.
+- **Fraud protection** — zero-liability protection for unauthorized purchases.
+- **Travel perks** — depending on the card, this may include airport lounge access, travel credits, or priority services.
+
+Benefits can vary by card type and account terms, so it’s best to review the card’s benefits guide or contact customer support for the exact details.
+
+WITH RETRIEVAL:
+The Travel Rewards Card benefits are:
+
+- 2x reward points
+- Airport lounge access
+
+---------------------------------------------------
+
+2026-05-31 16:03:44,528 - HTTP Request: POST https://openai.vocareum.com/v1/responses "HTTP/1.1 200 OK"
+2026-05-31 16:03:45,006 - HTTP Request: POST https://openai.vocareum.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-05-31 16:03:47,316 - HTTP Request: POST https://openai.vocareum.com/v1/responses "HTTP/1.1 200 OK"
+2026-05-31 16:03:47,317 - 
+Customer=What is the premium wealth management fee?
+
+WITHOUT RETRIEVAL:
+The premium wealth management fee is **1% of assets under management annually**.
+
+WITH RETRIEVAL:
+The information is unavailable.
+
+---------------------------------------------------
+

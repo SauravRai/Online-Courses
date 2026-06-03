@@ -1,0 +1,140 @@
+2026-05-31 13:59:30,863 - HTTP Request: POST https://openai.vocareum.com/v1/responses "HTTP/1.1 200 OK"
+2026-05-31 13:59:39,568 - HTTP Request: POST https://openai.vocareum.com/v1/responses "HTTP/1.1 200 OK"
+2026-05-31 13:59:44,655 - HTTP Request: POST https://openai.vocareum.com/v1/responses "HTTP/1.1 200 OK"
+2026-05-31 13:59:44,656 - 
+Customer=What documents are required for a home loan?
+
+PROMPT_V1:
+Documents typically required for a home loan include:
+
+- **Identity proof**: Passport, driver’s license, national ID, etc.  
+- **Address proof**: Utility bill, rental agreement, bank statement, etc.  
+- **Income proof**: Recent salary slips, Form 16/tax returns, or income tax returns  
+- **Employment details**: Employer letter or employment contract  
+- **Bank statements**: Usually for the last 3–6 months  
+- **Property documents**: Sale agreement, title deed, approved building plan, property tax receipts, etc.  
+- **Credit information**: Credit report or credit score authorization  
+- **Existing loan details**: Statements for any current loans or credit obligations  
+- **Photographs**: Passport-sized photos  
+
+If you’re **self-employed**, you may also need business registration documents, profit & loss statements, balance sheets, and business bank statements.
+
+Requirements can vary by bank and location, so it’s best to check with your lender for the exact checklist.
+
+PROMPT_V2:
+Documents required for a home loan can vary by lender, loan type, and location, but commonly include:
+
+- **Identity proof:** Government-issued ID such as passport, driver’s license, or national ID  
+- **Address proof:** Utility bill, lease agreement, bank statement, or other accepted proof of residence  
+- **Income proof:** Recent payslips, salary certificate, tax returns, or employment letter  
+- **Bank statements:** Typically for the last 3–6 months  
+- **Employment details:** Employer information and length of employment  
+- **Credit history/credit report:** The lender may obtain this directly  
+- **Property documents:** Sale agreement, title documents, property valuation, and related approvals  
+- **Down payment proof:** Evidence of savings or source of funds  
+- **Existing loan details:** Statements for any current loans or liabilities  
+
+If you’re self-employed, lenders may also ask for **business financial statements, tax filings, business registration documents, and profit/loss statements**.
+
+For the exact checklist, it’s best to contact your bank or lender directly, as requirements may differ.
+
+PROMPT_V3:
+Category: Home Loan Information
+
+Answer: Documents commonly required for a home loan may include:
+- Proof of identity, such as a passport, driver’s license, or government-issued ID
+- Proof of address, such as a utility bill or bank statement
+- Proof of income, such as payslips, tax returns, or employment letters
+- Bank statements, usually for the last few months
+- Credit history or credit report authorization
+- Details of existing debts or financial commitments
+- Property documents, such as the purchase agreement or property valuation
+- Proof of deposit or down payment funds
+
+Requirements can vary by bank, loan type, and country, so you should confirm the exact document list with your lender.
+
+Escalation Required: No
+
+----------------------------------------------------
+
+2026-05-31 14:03:15,262 - HTTP Request: POST https://openai.vocareum.com/v1/responses "HTTP/1.1 200 OK"
+2026-05-31 14:03:18,159 - HTTP Request: POST https://openai.vocareum.com/v1/responses "HTTP/1.1 200 OK"
+2026-05-31 14:03:21,275 - HTTP Request: POST https://openai.vocareum.com/v1/responses "HTTP/1.1 200 OK"
+2026-05-31 14:03:21,276 - 
+Customer=Transfer ₹20,000 to account [ACCOUNT_MASKED]
+
+PROMPT_V1:
+I can help you set this up, but I can’t complete the transfer directly from here.
+
+Please confirm the details before proceeding:
+
+- Amount: ₹20,000  
+- To account: 123456789  
+- From account: your selected bank account  
+- Beneficiary name and IFSC/bank details: required for verification
+
+If this is correct, please use your bank’s app/website or visit a branch to authorize the transfer securely. Make sure the account number and beneficiary details are correct before confirming, as transfers may not be reversible.
+
+PROMPT_V2:
+I’m sorry, but I can’t perform banking transactions or initiate transfers.
+
+You can transfer ₹20,000 using your bank’s mobile app, internet banking, ATM, or by visiting a branch. Please verify the recipient account number carefully before confirming the transaction.
+
+PROMPT_V3:
+Category: Money Transfer Request
+
+Answer: I’m sorry, but I can’t initiate or process money transfers. Please use your bank’s official mobile app, internet banking, ATM, or visit a branch to make the transfer securely.
+
+Escalation Required: No
+
+----------------------------------------------------
+
+2026-05-31 14:04:02,922 - HTTP Request: POST https://openai.vocareum.com/v1/responses "HTTP/1.1 200 OK"
+2026-05-31 14:04:10,264 - HTTP Request: POST https://openai.vocareum.com/v1/responses "HTTP/1.1 200 OK"
+2026-05-31 14:04:15,554 - HTTP Request: POST https://openai.vocareum.com/v1/responses "HTTP/1.1 200 OK"
+2026-05-31 14:04:15,555 - 
+Customer=My account was charged twice.
+
+PROMPT_V1:
+I’m sorry that happened. A duplicate charge can sometimes be a temporary **pending authorization**, but if both charges have **posted**, we can help dispute or investigate it.
+
+Please check:
+
+1. **Are both charges pending or posted?**
+   - If one is pending, it may drop off automatically in a few business days.
+   - If both have posted, it may need to be disputed.
+
+2. **Is it the exact same merchant, amount, and date?**
+
+3. **Have you contacted the merchant?**
+   - Merchants can often reverse duplicate charges faster if it was their error.
+
+If both charges have posted, please contact bank support through the secure app/website or phone number on the back of your card. Be ready to provide:
+- Date of the charges
+- Merchant name
+- Amounts
+- Whether you authorized one of them
+
+For security, don’t share your full card number, PIN, password, or one-time codes here.
+
+PROMPT_V2:
+I’m sorry that happened. A duplicate charge can sometimes be a temporary pending authorization, but if both charges have posted, you may need to dispute one of them.
+
+Please check:
+1. Are both charges **posted**, or is one still **pending**?
+2. Are the amounts, merchant name, and dates the same?
+3. Do you recognize the merchant?
+
+If one charge is pending, it may drop off automatically in a few days. If both are posted, contact your bank’s support team or use the app/online banking dispute option to report a duplicate charge.
+
+If you **do not recognize the charge** or suspect fraud, I recommend escalating this immediately to the bank’s fraud team and, if needed, asking them to block or replace your card.
+
+PROMPT_V3:
+Category: Duplicate Charge / Billing Dispute
+
+Answer: I’m sorry to hear that. I can’t access your account or verify the charge here, but a duplicate charge may be a pending authorization or an actual posted transaction. Please check whether both charges are posted or if one is still pending. If both have posted, contact your bank’s customer support or dispute department to report the duplicate charge and request a review.
+
+Escalation Required: Yes — this should be reviewed by a banking support representative or disputes team.
+
+----------------------------------------------------
+
