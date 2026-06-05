@@ -8,26 +8,6 @@ A complete end-to-end AI Agent Engineering project covering Prompt Engineering, 
 
 INTRODUCTION
 
-
-In this Industry Capstone, you will work as an AI Engineer or Applied AI Consultant inside a company. The organization wants to deploy an AI agent that can assist users in real workflows — handling ambiguity, reasoning across steps, using tools, learning from feedback, and operating safely in production.
-Your responsibility is to design, build, test, iterate, and justify an AI agent in an industry setting, not as a one-off prototype.
-
-************************************************************************************************************************************
-
-Problem Statement
-You must design an AI agent to support a realistic business workflow in a chosen industry scenario. The agent should demonstrate reliability, explainability, safety-first behaviour, and practical usefulness for real users, with evidence through artefacts and test logs.
-
-Your final submission should make it clear:
-
-who the user is and what workflow the agent supports,
-what success looks like (criteria + metrics),
-what failures you anticipated and how you handled them,
-and why your architecture/design decisions are justified.
-
-************************************************************************************************************************************
-Framework Requirement:
-Framework-Based: LangChain OR CrewAI OR Flowise.
-
 ************************************************************************************************************************************
 Scenario: Banking — AI Banking Support & Advisory Agent (Non-Transactional)
 Safety Requirements:
@@ -36,10 +16,6 @@ Must refuse money movement, approvals, or legal advice.
 Must not hallucinate customer data.
 Must escalate ambiguous or high-risk cases.
 Must not store PII in logs.
-
-************************************************************************************************************************************
-Task to be performed
-You will build the agent following an industry workflow across the phases below. Your submission must include clear evidence (screenshots/logs/tables/artefacts) for the key capabilities.
 
 ************************************************************************************************************************************
 
